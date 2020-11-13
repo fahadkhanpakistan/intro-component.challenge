@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--Red);
+  color: #fff;
+}
+:root {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+}
+.container {
+  padding: 2rem 1rem;
+}
+.sec-1 h1 {
+  letter-spacing: 2px;
+  padding: 1rem 0.8rem;
+  text-align: center;
+}
+.sec-1 p {
+  font-weight: 400;
+  padding: 0 1rem;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+/* Section-2 */
+.sec-2 {
+  height: 100%;
+}
+#seven-days {
+  letter-spacing: 1px;
+  box-shadow: 2px 3px 5px 1px #333;
+  border-radius: 5px;
+  background-color: var(--Blue);
+  padding: 1rem 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ddd;
+}
+#seven-days strong {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+#form {
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 0.5rem;
+  margin: auto;
+  width: 100%;
+  box-shadow: 1px 4px 10px #333;
+}
+.input-control {
+  width: 100%;
+  padding: 1rem;
+}
+.input-control input {
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid #555;
+}
+input::placeholder {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #444;
+}
+.btn {
+  display: block;
+  padding: 1rem;
+  border: none;
+  width: 95.8%;
+  margin: auto;
+  border-radius: 5px;
+  background-color: var(--Green);
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+}
+#form p {
+  text-align: center;
+  padding: 1rem;
+  color: var(--Dark-Blue);
+  font-size: 0.9rem;
+}
+#form p em {
+  color: var(--Red);
+}
+@media only screen and (min-width: 850px) {
+  .container {
+    /* width: 90%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sec-1 {
+    margin-right: 2rem;
+    width: 430px;
+    padding-top: 5rem;
+  }
+  .sec-1 h1 {
+    font-size: 2rem;
+  }
+  .sec-1 p {
+    font-size: 1rem;
+  }
+  .sec-1 h1,
+  .sec-1 p {
+    text-align: left;
+  }
+
+  .sec-2 {
+    width: 40%;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,32 @@
+@media only screen and (min-width: 1400px) {
+  .container {
+    /* height: 96.6%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sec-1 {
+    width: 586px;
+    padding-right: 2rem;
+  }
+
+  .sec-1 h1 {
+    line-height: 1.2;
+    letter-spacing: 3px;
+    font-size: 2.9rem;
+    text-align: left;
+    padding-top: 5rem;
+  }
+  .sec-1 p {
+    font-size: 1.3rem;
+    padding-top: 1rem;
+    text-align: left;
+  }
+
+  .sec-2 {
+    width: 35%;
+  }
+  #seven-days {
+    padding: 1rem 0;
+  }
+}
